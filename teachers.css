@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('Backgrounds/back5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .teachers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .teacher {
+    width: 30%;
+    background-color: #3333338d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+    border: 3px double blue;
+  }
+  
+  .teacher:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .teacher h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .teacher p {
+    line-height: 1.5;
+  }
+  
+  .teacher button {
+    background-color: #3399ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .teacher button:hover {
+    background-color: #2eafff;
+  }
+  
+  /* Animations (Customize these for different effects!) */
+  
+  .teachers {
+    animation: enter-row 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes enter-row {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .teacher {
+    animation: box-pop 0.3s ease-in-out forwards;
+  }
+  
+  @keyframes box-pop {
+    from {
+      transform: scale(0.9);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* Add media queries for responsive design (optional) */
+  
+  @media only screen and (max-width: 768px) {
+    .teacher {
+      width: 48%;
+    }
+  }
+  .men{
+    align-items: center;
+  }
+ .align{
+    float: right;
+    text-align: right;
+    margin-top: -70px;
+    margin-right: 185px;
+ }
+ .margin{
+    margin-left: 200px;
+ }
+ button{
+    background-color: gray;
+ }
+  
+  
